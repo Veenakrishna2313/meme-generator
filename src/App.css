@@ -1,0 +1,40 @@
+*,*::after,*::before{
+  box-sizing: border-box;
+  margin: 0;
+
+}
+
+html{
+  font-size: 62.5%;
+  font-family: 'Karla', sans-serif;
+  
+}
+
+.main-container{
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+/******** Navbar*******************/
+
+.navbar{
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  display: flex;
+  align-items: center;
+  gap:7px;
+  padding:20px 0;  
+}
+
+.navbar-heading{
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.1em;
+  color:#ffffff;
+}
+
+.navbar-image{
+  width: 31.31px;
+  height: 26.22px;
+  margin-left: 20px;
+}
