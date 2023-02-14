@@ -89,7 +89,7 @@ body{
 }
 
 .image-meme{
-  width: 500px;
-  height: 300px;
+  max-width: 477px;
+  max-height: 268px;
   border-radius: 2px
 }

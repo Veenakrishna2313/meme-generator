@@ -1,7 +1,7 @@
 import Navbar from './Components/Navbar';
 import Meme from './Components/meme';
 import './App.css';
-import data from '../memesData'
+
 
 function App() {
   
@@ -10,7 +10,7 @@ function App() {
     <div className="main-container">
       <Navbar/>
         <section className='meme-container'>
-          <Meme memes={data}/>
+          <Meme/>
         </section>
       
     </div>
