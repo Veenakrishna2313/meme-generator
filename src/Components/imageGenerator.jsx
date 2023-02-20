@@ -2,7 +2,7 @@
 const ImageGenerator=(props)=>{
 
     return(
-    <div className="imageContainer">
+    <div >
       <img src={props.URL} className="image-meme" />
     </div>
   )

@@ -12,8 +12,7 @@ function App() {
         <section className='meme-container'>
           <Meme/>
         </section>
-      
-    </div>
+     </div>
   )
 }
 
