@@ -1,9 +1,11 @@
 import ImageGenerator from "./imageGenerator";
-import React,{useState} from "react";
+import React,{useState,useEffect} from "react";
 import memesData from "../../memesData";
 
 const Meme=()=>{
 const {memes}=memesData.data;
+
+
 
 //const [URL,setURL]=useState("http://i.imgflip.com/1bij.jpg");
 const [meme,setMeme]=useState({
@@ -11,7 +13,14 @@ const [meme,setMeme]=useState({
   bottomText:'',
   randomImage:"http://i.imgflip.com/1bij.jpg"
 });
-const [allMemeImages,setAllMemeImages]=useState(memes);
+const [allMemeImages,setAllMemeImages]=useState([]);
+
+useEffect(()=>{
+  fetch("https://api.imgflip.com/get_memes")
+  .then(res=>res.json())
+  .then(res=>setAllMemeImages(res.data.memes))
+  .catch(err=>console.log(err))
+},[])
 
 
   const getMemeImage=()=>{
